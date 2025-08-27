@@ -5,6 +5,7 @@
 package tools;
 
 import javax.swing.JComponent;
+import javax.swing.JTextField;
 
 /**
  *
@@ -17,4 +18,13 @@ public class Util {
             
         }
     }
+    
+    public static void limpar(JComponent ... componentes){
+        for (int i = 0; i < componentes.length; i++) {
+            ((JTextField)componentes[i]).setText("");
+            
+        }
+        
+    }
+  
 }
